@@ -6,6 +6,38 @@
     <title>Jovian Drift SOS</title>
 </head>
 <body>
-    
+    <form method="post" action="#">
+        <fieldset>
+            <label for="pilot-name">Pilot Name:</label>
+            <label for="Pilot Name"></label>
+            <input type="text" id="pilot-name" name="pilot_name" placeholder="Enter name" required>
+        <br></br>
+            <label for="access-code">Access Code:</label>
+            <input type="password" id="access-code" name="access_code" required>
+        <br></br>
+            <label for="email">Command Email:</label>
+            <input type="email" id="email" name="email" required>    
+        </fieldset>
+
+
+                <fieldset>
+            <legend>"Vessel Diagnostics"</legend>
+            <label for="hull-damage">Hull Damage (%):</label>
+            <input type="number" id="hull-damage" name="hull_damage" required>
+        <br></br>
+            <label for="emergency-level">Emergency Level: </label>
+            <select id="emergency-level" name="emergency_level" required>
+                <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                        <option value="high">High</option>
+            </select>                
+        </fieldset>
+        <br></br>
+        <fieldset>
+            <legend>"Mission Log & Evidence"</legend>
+            <label for="">SOS Message</label>
+            <textarea id="sos-message" name="sos_message" rows="3" required></textarea>
+        </fieldset>
+
 </body>
 </html>
